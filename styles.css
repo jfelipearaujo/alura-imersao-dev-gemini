@@ -2,19 +2,14 @@
 
 body {
     font-family: Roboto, sans-serif;
-    text-align: center;
     background-color: #51ceed;
-}
-
-footer {
-    background-color: #1faacc;
-    color: #45474B;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
     padding: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    font-size: 1rem;
 }
 
 .title {
@@ -43,13 +38,13 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+footer a:hover {
     color: #000099;
 }
 
 section {
-    display: inline;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
@@ -79,4 +74,47 @@ section button {
     color: #F5F7F8;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+section button:hover {
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.results {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.item-result {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-result p {
+    max-width: 35rem;
+}
+
+.item-result:hover {
+    background: #f2f1f1;
+}
+
+footer {
+    background-color: #1faacc;
+    color: #45474B;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
 }
