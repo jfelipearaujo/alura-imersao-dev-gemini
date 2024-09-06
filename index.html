@@ -6,54 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn To Go</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <img src="images/gopher.png" alt="Learn To Go">
-            <div>
-                <h1>Learn To Go</h1>
-                <p>Aprenda a programar usando a linguagem de Go</p>
+    <div class="container">
+        <div class="header">
+            <header>
+                <div class="title">
+                    <img src="assets/gopher.png" alt="Learn To Go">
+                    <div class="title-content">
+                        <h1>Learn To Go</h1>
+                        <p>Aprenda a programar usando a linguagem Go!</p>
+                    </div>
+                </div>
+            </header>
+            <div class="search">
+                <input id="search-prompt" type="text" placeholder="Digite algo sobre a linguagem Go Lang">
+                <button id="search-btn">Aprender</button>
             </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Digite o que deseja saber sobre Go">
-            <button>Buscar</button>
-        </section>
-
-        <section class="results">
-            <div class="item-result">
-                <p>
-                    Go é uma linguagem de programação de código aberto, desenvolvida pela Google, que permite escrever
-                    programas de forma mais eficiente e fácil de ler e manter.
-                </p>
+        <div class="main-content">
+            <div id="search-result" class="search-result">
+                <p><b>Faça uma pergunta sobre a linguagem Go!</b></p>
+                <br>
+                <p>Exemplo: Como criar um servidor HTTP em Go?</p>
             </div>
+        </div>
+    </div>
 
-            <div class="item-result">
-                <p>
-                    O uso de Go é muito simples, pois ele é baseado em uma sintaxe de programação simples e intuitiva.
-                </p>
-            </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Olá, para ter a experiência completa informe API Key do Google Gemini:</h2>
+            <p>Fique tranquilo, essa informação é de uso único e não será armazenada!</p>
 
-            <div class="item-result">
-                <p>
-                    Vários recursos avançados, como goroutines e channels, permitem que você escreva código mais
-                    eficiente
-                    e escalável.
-                </p>
+            <p>Se você não tiver uma chave, você pode criar uma <a href="https://aistudio.google.com/app/apikey"
+                    target="_blank">aqui</a>.
+            </p>
+
+            <div class="input-container">
+                <input type="password" id="api-key" placeholder="Digite sua API Key" class="input-box">
+                <button id="save-api-key-btn" class="confirm-button">Salvar</button>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>Feito por <a href="https://www.linkedin.com/in/jsfelipearaujo/" target="_blank">Jose Felipe Araújo</a> em
-            Setembro de 2024
-        </p>
-    </footer>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
