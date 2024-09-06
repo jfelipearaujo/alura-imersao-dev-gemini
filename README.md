@@ -8,9 +8,11 @@ Com o Gemini você pode criar prompts de pesquisas e gerar respostas para elas, 
 
 Neste projeto tive a ideia de ir além e criei uma aplicação que permite que você crie prompts de pesquisas e gere respostas para elas sobre a linguagem de programação Go.
 
-## Demonstração
+## Vídeo de Demonstração
 
-[<img src="./assets/thumbnail.png" width="50%">](https://www.youtube.com/watch?v=-YvusW0YUgQ "Demo - Alura Imersão Dev - Learn To Go")
+Clique abaixo e veja como funciona o projeto:
+
+[<img src="./assets/thumbnail.png" width="100%">](https://www.youtube.com/watch?v=-YvusW0YUgQ "Demo - Alura Imersão Dev - Learn To Go")
 
 ## 📝 Descrição
 
