@@ -10,7 +10,7 @@ Neste projeto tive a ideia de ir além e criei uma aplicação que permite que v
 
 ## Demonstração
 
-[![demo](./assets/demo.gif)](./assets/demo.gif)
+[<img src="./assets/thumbnail.png" width="50%">](https://www.youtube.com/watch?v=-YvusW0YUgQ "Demo - Alura Imersão Dev - Learn To Go")
 
 ## 📝 Descrição
 
